@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <DateInput msg="" />
+    <MenuRadio msg="" />
+    <SubmitInput msg="" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DateInput from "./components/DateInput.vue";
+import MenuRadio from "./components/MenuRadio.vue";
+import SubmitInput from "./components/SubmitInput.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    DateInput,
+    MenuRadio,
+    SubmitInput,
+  },
+  data() {
+    return {
+      colorie: 'red',
+      step: 'step1'
+    }
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.temp {
+  margin: 1em;
 }
 </style>
