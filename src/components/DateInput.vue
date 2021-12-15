@@ -1,7 +1,6 @@
 <template>
   <div class="temp">
-    <p>Select a day :</p>
-    <label for="Date"></label>
+    <label for="Date">Date : </label>
     <input type="date" name="date" id="date" />
   </div>
 </template>
